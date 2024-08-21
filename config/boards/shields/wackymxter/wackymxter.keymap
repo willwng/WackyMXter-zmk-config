@@ -1,0 +1,25 @@
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/outputs.h>
+
+#define BASE 0
+
+
+/ {
+    keymap {
+        compatible = "zmk,keymap";
+
+        default_layer {
+            label= "BASE";
+            bindings = <
+                &kp TILDE      &kp N1      &kp N2      &kp N3      &kp N4     &kp N5         &kp HOME
+                &kp TAB        &kp Q       &kp W       &kp E       &kp R      &kp T          &kp END
+                &kp CAPS       &kp A       &kp S       &kp D       &kp F      &kp G          &kp KP_MINUS
+                &kp LSHFT      &kp Z       &kp X       &kp C       &kp V      &kp B          &kp BSPC
+                &kp LCTRL      &kp LGUI    &kp LGUI    &kp LALT    &kp SPACE  &kp ESC      
+            >;
+        };
+
+    };
+};

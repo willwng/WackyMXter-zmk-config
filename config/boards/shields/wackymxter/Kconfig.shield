@@ -1,0 +1,2 @@
+config WACKYMXTER
+    def_bool $(shields_list_contains,wackymxter)

@@ -1,0 +1,10 @@
+if WACKYMXTER
+
+config ZMK_KEYBOARD_NAME
+    default "WackyMXter"
+    
+
+config SPI
+    default y
+
+endif
