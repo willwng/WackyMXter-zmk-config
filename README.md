@@ -1,1 +1,1 @@
-# WackyMXter-zmk-config
+# ZMK Config for WackyMXter
