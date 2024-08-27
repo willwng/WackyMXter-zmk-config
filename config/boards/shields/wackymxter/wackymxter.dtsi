@@ -67,7 +67,7 @@
         label = "LEFT_ENCODER";
         a-gpios = <&xiao_d 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&xiao_d 5 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        resolution = <24>;
+        steps = <80>;
         status = "disabled";
     };
 
@@ -76,12 +76,13 @@
         label = "RIGHT_ENCODER";
         a-gpios = <&xiao_d 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&xiao_d 5 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        resolution = <24>;
+        steps = <80>;
         status = "disabled";
     };
 
     sensors {
         compatible = "zmk,keymap-sensors";
         sensors = <&left_encoder &right_encoder>;
+        triggers-per-rotation = <20>;
     };
 };
