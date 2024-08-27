@@ -3,3 +3,7 @@
 &transform {
     col-offset = <7>;
 };
+
+&encoder {
+    status = "okay";
+};

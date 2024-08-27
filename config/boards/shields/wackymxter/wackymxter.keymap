@@ -18,6 +18,8 @@
                 &kp LSHFT      &kp Z       &kp X       &kp C       &kp V      &kp B          &kp BSPC      &kp RSHFT      &kp UP      &kp PERIOD  &kp COMMA   &kp M      &kp N          &kp BSPC
                 &kp LCTRL      &kp LGUI    &kp LGUI    &kp LALT    &kp SPACE  &kp ESC                      &kp RIGHT      &kp DOWN    &kp LEFT    &kp SLASH   &kp SPACE  &kp BSPC 
             >;
+
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
 
     };
