@@ -6,3 +6,6 @@ url: https://github.com/willwng/WackyMXter
 requires: [seeeduino_xiao_ble]
 features:
   - keys
+siblings:
+  - wackymxter_left
+  - wackymxter_right
