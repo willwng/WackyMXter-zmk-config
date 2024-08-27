@@ -4,6 +4,6 @@
     col-offset = <7>;
 };
 
-&encoder {
-    status = "okay";
+&right_encoder {
+	status = "okay";
 };

@@ -1,5 +1,5 @@
 #include "wackymxter.dtsi"
 
-&encoder {
-    status = "okay";
+&left_encoder {
+	status = "okay";
 };
