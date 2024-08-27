@@ -6,7 +6,7 @@ config ZMK_KEYBOARD_NAME
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
-end if
+endif
 
 if WACKYMXTER_LEFT || WACKYMXTER_RIGHT
 
