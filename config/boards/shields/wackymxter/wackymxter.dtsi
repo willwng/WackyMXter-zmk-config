@@ -58,7 +58,7 @@
 		compatible = "zmk,kscan-gpio-matrix";
 
 		diode-direction = "col2row";
-
+        
 		col-gpios
                = <&shifter 0 (GPIO_ACTIVE_HIGH)>
                , <&shifter 1 (GPIO_ACTIVE_HIGH)>
@@ -79,7 +79,6 @@
 
     kscan_buttons: kscan {
         compatible = "zmk,kscan-gpio-direct";
-        wakeup-source;
         input-gpios
             = <&xiao_d 9 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
             ;
