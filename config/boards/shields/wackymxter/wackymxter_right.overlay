@@ -1,7 +1,7 @@
 #include "wackymxter.dtsi"
 
 &transform {
-    col-offset = <8>;
+    col-offset = <7>;
 };
 
 &right_encoder {
