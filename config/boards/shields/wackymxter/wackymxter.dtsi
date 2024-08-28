@@ -42,6 +42,10 @@
 
     kscan: kscan_composite {
         compatible = "zmk,kscan-composite";
+		columns = <14>;
+        // 5 columns for keys, 1 for the rotary encoder buttons
+		rows = <6>;
+    
         // Key matrix driver
         matrix {
             kscan = <&kscan_keys>;
@@ -69,8 +73,8 @@
                , <&shifter 6 (GPIO_ACTIVE_HIGH)>
                ;
            row-gpios
-               = <&xiao_d 0  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-               , <&xiao_d 1  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+               = <&xiao_d 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+               , <&xiao_d 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
                , <&xiao_d 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
                , <&xiao_d 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
                , <&xiao_d 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
