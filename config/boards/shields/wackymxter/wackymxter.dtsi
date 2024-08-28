@@ -52,7 +52,7 @@
             kscan = <&kscan_buttons>;
             row-offset = <5>; // shifted to not overlap
         };
-    }
+    };
 
 	kscan_keys: kscan_matrix {
 		compatible = "zmk,kscan-gpio-matrix";
