@@ -4,7 +4,7 @@
 #include <dt-bindings/zmk/outputs.h>
 
 #define BASE 0
-#define BLUETOOTH 1
+#define FUNCTION 1
 
 
 / {
@@ -25,18 +25,20 @@
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp DOWN UP>;
         };
 
+        // Hold the middle thumb key to access this layer: functions and bluetooth pairing
         bluetooth_layer {
-            label= "BLUETOOTH";
+            label= "FUNCTION";
             bindings = <
-                &kp TILDE      &kp N1      &kp N2      &kp N3      &kp N4     &kp N5         &kp HOME      &kp BSPC       &kp N0      &kp N9      &kp N8      &kp N7     &kp N6         &kp END  
+                &kp TILDE      &kp F1      &kp F2      &kp F3      &kp F4     &kp F5         &kp HOME      &kp BSPC       &kp F10     &kp F9      &kp F8      &kp F7     &kp F6         &kp END  
                 &kp TAB        &kp Q       &kp W       &kp E       &kp R      &kp T          &kp LBKT      &kp BACKSLASH  &kp P       &kp O       &kp I       &kp U      &kp Y          &kp RBKT
                 &kp CAPS       &kp A       &kp S       &kp D       &kp F      &kp G          &kp KP_MINUS  &kp SQT        &kp SEMI    &kp L       &kp K       &kp J      &kp H          &kp EQUAL
                 &kp LSHFT      &kp Z       &kp X       &kp C       &kp V      &kp B          &bt BT_CLR    &kp RSHFT      &kp SLASH   &kp PERIOD  &kp COMMA   &kp M      &kp N          &kp BSPC
-                &kp LCTRL      &kp LGUI    &kp LGUI    &out OUT_USB    &out OUT_BLE &kp ESC                      &kp RIGHT      &kp UP      &kp DOWN    &kp LEFT    &kp SPACE  &kp ESC 
+                &kp LCTRL      &kp LGUI    &kp LGUI    &out OUT_USB    &out OUT_BLE &kp ESC                &bt BT_NXT     &kp UP      &kp DOWN    &bt BT_PRV  &kp SPACE  &kp ESC 
                 &kp C_MUTE     &kp LGUI
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_DN PG_UP>;
+            // Rotary becomes brightness and zoom
+            sensor-bindings = <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC &inc_dec_kp C_AC_ZOOM_IN C_AC_ZOOM_OUT>;
         };
     };
 };
